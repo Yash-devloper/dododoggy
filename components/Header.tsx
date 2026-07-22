@@ -32,13 +32,13 @@ export function Header({ onSearchClick }: HeaderProps) {
 
         {/* Center Navigation Links */}
         <nav className="hidden md:flex items-center space-x-1 lg:space-x-6 text-sm font-semibold text-slate-700">
-          <a href="/#services" className="px-3 py-2 rounded-lg hover:text-[#D2691E] hover:bg-amber-50 transition-colors flex items-center gap-1">
+          <a href="/services" className="px-3 py-2 rounded-lg hover:text-[#D2691E] hover:bg-amber-50 transition-colors flex items-center gap-1">
             Find Services
             <svg className="w-4 h-4 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/></svg>
           </a>
           <a href="/insurance" className="px-3 py-2 rounded-lg hover:text-[#D2691E] hover:bg-amber-50 transition-colors">Insurance</a>
           <a href="/breeds" className="px-3 py-2 rounded-lg hover:text-[#D2691E] hover:bg-amber-50 transition-colors">Breeds</a>
-          <a href="/#blog" className="px-3 py-2 rounded-lg hover:text-[#D2691E] hover:bg-amber-50 transition-colors">Learn</a>
+          <a href="/blog" className="px-3 py-2 rounded-lg hover:text-[#D2691E] hover:bg-amber-50 transition-colors">Learn</a>
           <a href="/tools" className="px-3 py-2 rounded-lg hover:text-[#D2691E] hover:bg-amber-50 transition-colors">Tools</a>
         </nav>
 
@@ -60,10 +60,10 @@ export function Header({ onSearchClick }: HeaderProps) {
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-b border-amber-100 px-4 py-4 space-y-2">
-          <a href="/#services" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-slate-800 font-semibold border-b border-slate-100">Find Services</a>
-          <a href="/#cities" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-slate-800 font-semibold border-b border-slate-100">Indian Cities</a>
+          <a href="/services" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-slate-800 font-semibold border-b border-slate-100">Find Services</a>
+          <a href="/cities" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-slate-800 font-semibold border-b border-slate-100">Indian Cities</a>
           <a href="/insurance" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-[#D2691E] font-bold border-b border-slate-100">Pet Insurance</a>
-          <a href="/#blog" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-slate-800 font-semibold border-b border-slate-100">Pet Blog &amp; Guides</a>
+          <a href="/blog" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-slate-800 font-semibold border-b border-slate-100">Pet Blog &amp; Guides</a>
           <a href="/tools" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-slate-800 font-semibold">Calculators &amp; Tools</a>
         </div>
       )}
